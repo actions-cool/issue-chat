@@ -41,12 +41,13 @@ async function main () {
       let result = body;
       if (body.startsWith('/双色球')) {
         let red = sampleSize(REDARR, 6);
+        red.sort();
         let blue = sampleSize(BLUEARR, 1);
         result = `
 Just for fun
-| Red | ${red[0]} ${red[1]} ${red[2]} ${red[3]} ${red[4]} ${red[5]} |
+| Red | Blue |
 | -- | -- |
-| Blue | ${blue[0]} |`
+| ${red[0]} ${red[1]} ${red[2]} ${red[3]} ${red[4]} ${red[5]} | ${blue[0]} |`
       }
       return result;
     };
