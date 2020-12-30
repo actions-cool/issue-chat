@@ -1,0 +1,27 @@
+{
+  "name": "issue-chat",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Some operations on issue.",
+  "main": "src/main.js",
+  "scripts": {
+    "package": "ncc build src/main.js -o dist"
+  },
+  "author": "xrkffgg",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/actions-cool/issue-chat.git",
+    "branch": "main"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "@octokit/rest": "^18.0.12",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.25.1",
+    "dotenv": "^8.2.0"
+  }
+}
