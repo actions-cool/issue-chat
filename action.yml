@@ -4,6 +4,10 @@ author: 'xrkffgg'
 branding:
   icon: 'message-square'
   color: 'black'
+inputs:
+  token:
+    description: 'Github_token'
+    default: ${{ github.token }}
 runs:
   using: node12
-  main: 'dist/index.js'
+  main: 'lib/index.js'
