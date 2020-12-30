@@ -5,7 +5,7 @@
   "description": "Some operations on issue.",
   "main": "src/main.js",
   "scripts": {
-    "package": "ncc build src/main.js -o dist"
+    "package": "ncc build src/main.js -o lib"
   },
   "author": "xrkffgg",
   "license": "MIT",
