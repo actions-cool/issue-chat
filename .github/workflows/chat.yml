@@ -1,0 +1,14 @@
+name: Chat
+
+on:
+  issue_comment:
+    types: [created]
+  issues:
+    types: [created]
+
+jobs:
+  chat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: mark-duplicate
+        uses: actions-cool/issue-chat@main
