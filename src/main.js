@@ -64,7 +64,7 @@ async function main () {
 
     function getRedBlue () {
       let red = sampleSize(REDARR, 6);
-      red.sort();
+      red.sort((a,b) => a - b);
       let blue = sampleSize(BLUEARR, 1);
       return { red, blue };
     };
